@@ -83,15 +83,40 @@
     		font-weight: bold;
     		margin-top: 10px;
   		}
+		.container {
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  display: flex;
+		  flex-direction: row;
+		  justify-content: flex-end;
+		  align-items: center;
+		}
+
+		.login-btn {
+		  background-color: #2ea44f;
+		  color: #fff;
+		  border: none;
+		  padding: 10px 20px;
+		  font-size: 16px;
+		}
+
+		.bookmarklet-btn {
+		  background-color: #e0e0e0;
+		  color: #333;
+		  border: none;
+		  padding: 10px 20px;
+		  margin-left: 10px;
+		  font-size: 16px;
+		}
+
 	</style>
 </head>
 <body>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="discord/">Unblocked Discord</a>
-  <a href="bookmarklets/">Bookmarklets</a>
+<div class="container">
+	<button class="login-btn"><a href="login.html">Login</a></button>
+	<button class="bookmarklet-btn"><a href="bookmarklets/">Bookmarklets</a></button>
 </div>
-<span style="font-size:25px;cursor:pointer;margin-top: 20px;margin-left: 20px;" onclick="openNav()">&#9776; More</span>
 
 	<h1>Games by lolipop8090</h1>
 	<p>                Login as: <a id="username"></a> </p>
@@ -226,9 +251,19 @@
 		<li>
 			<figure>
 				<div style="border: 2px solid #FFFFFF; padding: 2px; border-radius: 0px;">
-					<a href="/">
-					<img src="icons/soon.png" alt="... game icon">
-					<figcaption>Soon...</figcaption>
+					<a href="fnf/">
+					<img src="icons/fnf.webp" alt="FnF game icon">
+					<figcaption>Friday Night Funkin</figcaption>
+					</a>
+				</div>
+			</figure>
+            	</li>
+		<li>
+			<figure>
+				<div style="border: 2px solid #FFFFFF; padding: 2px; border-radius: 0px;">
+					<a href="fnf/">
+					<img src="icons/fnf.webp" alt="FnF game icon">
+					<figcaption>Friday Night Funkin</figcaption>
 					</a>
 				</div>
 			</figure>
