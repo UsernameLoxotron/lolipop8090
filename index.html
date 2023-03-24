@@ -3,7 +3,13 @@
 <head>
 	<title>Coems</title>
 	<style>
-    	hr {
+		div {
+		  border: 2px solid #FFFFFF; 
+		  padding: 2px; 
+		  border-radius: 10px;
+		  overflow: hidden;
+		}
+    		hr {
      		color: white;
       		background-color: black;
       		height: 2px;
@@ -29,6 +35,11 @@
 		}
 		li {
 			margin: 0 10px;
+			list-style-type: none;
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			margin: 10px;
 		}
 		a {
 			color: white;
@@ -72,7 +83,24 @@
 		figure {
     		display: inline-block;
     		text-align: center;
- 		}
+  		padding: 2px; 
+  		border-radius: 10px;
+  		overflow: hidden;
+		transition: all 0.3s ease-in-out;
+		width: 100%;
+       		height: 100%;
+        	margin: 0;
+		}
+		
+		figure:hover {
+		  transform: translateY(-15px);
+		}
+
+		figure img {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
   		img {
     		width: 100px;
     		height: 100px;
@@ -89,10 +117,20 @@
 		  right: 0;
 		  display: flex;
 		  flex-direction: row;
-		  justify-content: flex-end;
+		  justify-content: center;
 		  align-items: center;
 		}
-
+		button {
+		  border-radius: 8px;
+		  border: none;
+		  padding: 15px;
+		  margin: 10px;
+		  font-size: 16px;
+		  font-weight: bold;
+		  cursor: pointer;
+		  background-color: #FFFFFF;
+		  color: #24292e; 
+		}
 		.login-btn {
 		  background-color: black;
 		  color: #fff;
@@ -102,20 +140,21 @@
 		}
 
 		.bookmarklet-btn {
-		  background-color: gray;
+		  background-color: #147A18;
 		  color: #333;
 		  border: none;
 		  padding: 10px 20px;
 		  margin-left: 10px;
 		  font-size: 16px;
 		}
-
+		button:hover {
+		  background-color: red;
+		}
 	</style>
 </head>
 <body>
 <div class="container">
 	<button class="login-btn"><a href="login.html">Login</a></button>
-	<button class="bookmarklet-btn"><a href="bookmarklets/">Bookmarklets</a></button>
 	<button class="bookmarklet-btn"><a href="chatgpt/">ChatGPT</a></button>
 </div>
 
